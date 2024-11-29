@@ -359,7 +359,14 @@ questions:
                                         schema:
                                           type: string
                                           private: true
-                                          required: true
+                                          required: false
+                                          default: ""
+                                      - variable: PASSWORD_HASH
+                                        label: "ADMIN_PASSWORD_HASH"
+                                        schema:
+                                          type: string
+                                          private: true
+                                          required: false
                                           default: ""
                                       - variable: LANG
                                         label: "Language"
