@@ -1914,11 +1914,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/archivebox.webp"
         },
         "archiveteam-warrior": {
-            "app_readme": "<p>The Archive Team Warrior is a virtual archiving appliance. You can run it to help with the Archive Team archiving efforts. It will download sites and upload them to our archive\u2014and it\u2019s really easy to do!</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/archiveteam-warrior\">https://truecharts.org/charts/stable/archiveteam-warrior</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>The Archive Team Warrior is a virtual archiving appliance. You can run it to help with the Archive Team archiving efforts. It will download sites and upload them to our archive—and it’s really easy to do!</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/archiveteam-warrior\">https://truecharts.org/charts/stable/archiveteam-warrior</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "Backup"
             ],
-            "description": "The Archive Team Warrior is a virtual archiving appliance. You can run it to help with the Archive Team archiving efforts. It will download sites and upload them to our archive\u2014and it\u2019s really easy to do!",
+            "description": "The Archive Team Warrior is a virtual archiving appliance. You can run it to help with the Archive Team archiving efforts. It will download sites and upload them to our archive—and it’s really easy to do!",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/archiveteam-warrior",
@@ -3771,11 +3771,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/chromium.webp"
         },
         "chronograf": {
-            "app_readme": "<p>Chronograf is InfluxData\u2019s open source web application. Use Chronograf with the other components of the TICK stack to visualize your monitoring data and easily create alerting and automation rules.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/chronograf\">https://truecharts.org/charts/stable/chronograf</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the TICK stack to visualize your monitoring data and easily create alerting and automation rules.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/chronograf\">https://truecharts.org/charts/stable/chronograf</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "Tools-System"
             ],
-            "description": "Chronograf is InfluxData\u2019s open source web application. Use Chronograf with the other components of the TICK stack to visualize your monitoring data and easily create alerting and automation rules.",
+            "description": "Chronograf is InfluxData’s open source web application. Use Chronograf with the other components of the TICK stack to visualize your monitoring data and easily create alerting and automation rules.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/chronograf",
@@ -4432,11 +4432,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/convos.webp"
         },
         "cops": {
-            "app_readme": "<p>Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by S\u00e9bastien Lucas, stands for Calibre OPDS (and HTML) Php Server.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/cops\">https://truecharts.org/charts/stable/cops</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, stands for Calibre OPDS (and HTML) Php Server.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/cops\">https://truecharts.org/charts/stable/cops</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "Cloud"
             ],
-            "description": "Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by S\u00e9bastien Lucas, stands for Calibre OPDS (and HTML) Php Server.\n",
+            "description": "Cops(http://blog.slucas.fr/en/oss/calibre-opds-php-server) by Sébastien Lucas, stands for Calibre OPDS (and HTML) Php Server.\n",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/cops",
@@ -5453,11 +5453,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/ddns-go.webp"
         },
         "ddns-route53": {
-            "app_readme": "<p>Dynamic DNS for Amazon Route 53\u200e on a time-based schedule</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/ddns-route53\">https://truecharts.org/charts/stable/ddns-route53</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>Dynamic DNS for Amazon Route 53‎ on a time-based schedule</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/ddns-route53\">https://truecharts.org/charts/stable/ddns-route53</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "Network-DNS"
             ],
-            "description": "Dynamic DNS for Amazon Route 53\u200e on a time-based schedule",
+            "description": "Dynamic DNS for Amazon Route 53‎ on a time-based schedule",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/ddns-route53",
@@ -7730,11 +7730,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/fistfuloffrags.webp"
         },
         "fivem": {
-            "app_readme": "<p>With this Chart you can run FiveM (GTA V MOD SERVER) it will automatically download the latest version or if you want to updated it yourself set the \u2018Manual Updates\u2019 (in the 'Show more settings' tab down below) to \u2018true\u2019 (without quotes). The Chart will automatically extract it and download all other required files (resources, server.cfg). You can get fx.tar.xz from here: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ To run this Chart you must provide a valid Server Key (you can get them from here: https://keymaster.fivem.net/) and your prefered Server Name.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/fivem\">https://truecharts.org/charts/stable/fivem</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>With this Chart you can run FiveM (GTA V MOD SERVER) it will automatically download the latest version or if you want to updated it yourself set the ‘Manual Updates’ (in the 'Show more settings' tab down below) to ‘true’ (without quotes). The Chart will automatically extract it and download all other required files (resources, server.cfg). You can get fx.tar.xz from here: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ To run this Chart you must provide a valid Server Key (you can get them from here: https://keymaster.fivem.net/) and your prefered Server Name.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/fivem\">https://truecharts.org/charts/stable/fivem</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "GameServers"
             ],
-            "description": "With this Chart you can run FiveM (GTA V MOD SERVER) it will automatically download the latest version or if you want to updated it yourself set the \u2018Manual Updates\u2019 (in the 'Show more settings' tab down below) to \u2018true\u2019 (without quotes). The Chart will automatically extract it and download all other required files (resources, server.cfg). You can get fx.tar.xz from here: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ To run this Chart you must provide a valid Server Key (you can get them from here: https://keymaster.fivem.net/) and your prefered Server Name.",
+            "description": "With this Chart you can run FiveM (GTA V MOD SERVER) it will automatically download the latest version or if you want to updated it yourself set the ‘Manual Updates’ (in the 'Show more settings' tab down below) to ‘true’ (without quotes). The Chart will automatically extract it and download all other required files (resources, server.cfg). You can get fx.tar.xz from here: https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/ To run this Chart you must provide a valid Server Key (you can get them from here: https://keymaster.fivem.net/) and your prefered Server Name.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/fivem",
@@ -9581,11 +9581,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/hasty-paste.webp"
         },
         "headphones": {
-            "app_readme": "<p>An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, \u00b5Torrent and Blackhole.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/headphones\">https://truecharts.org/charts/stable/headphones</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/headphones\">https://truecharts.org/charts/stable/headphones</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "media"
             ],
-            "description": "An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, \u00b5Torrent and Blackhole.",
+            "description": "An automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/headphones",
@@ -9746,11 +9746,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/hetzner-ddns.webp"
         },
         "hexchat": {
-            "app_readme": "<p>HexChat is an IRC client based on XChat, but unlike XChat it\u2019s completely free for both Windows and Unix-like systems. Since XChat is open source, it\u2019s perfectly legal. For more info. HexChat was originally called XChat-WDK which in turn was a successor of freakschat.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/hexchat\">https://truecharts.org/charts/stable/hexchat</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems. Since XChat is open source, it’s perfectly legal. For more info. HexChat was originally called XChat-WDK which in turn was a successor of freakschat.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/hexchat\">https://truecharts.org/charts/stable/hexchat</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "Productivity"
             ],
-            "description": "HexChat is an IRC client based on XChat, but unlike XChat it\u2019s completely free for both Windows and Unix-like systems. Since XChat is open source, it\u2019s perfectly legal. For more info. HexChat was originally called XChat-WDK which in turn was a successor of freakschat.",
+            "description": "HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems. Since XChat is open source, it’s perfectly legal. For more info. HexChat was originally called XChat-WDK which in turn was a successor of freakschat.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/hexchat",
@@ -16260,11 +16260,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/photo-stream.webp"
         },
         "photoprism": {
-            "app_readme": "<p>PhotoPrism\u00ae is a server-based application for browsing, organizing and sharing your personal photo collection</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/photoprism\">https://truecharts.org/charts/stable/photoprism</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/photoprism\">https://truecharts.org/charts/stable/photoprism</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "media"
             ],
-            "description": "PhotoPrism\u00ae is a server-based application for browsing, organizing and sharing your personal photo collection",
+            "description": "PhotoPrism® is a server-based application for browsing, organizing and sharing your personal photo collection",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/photoprism",
@@ -18251,11 +18251,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/qwantify.webp"
         },
         "radarr": {
-            "app_readme": "<p>A fork of Sonarr to work with movies \u00e0 la Couchpotato</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/radarr\">https://truecharts.org/charts/stable/radarr</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>A fork of Sonarr to work with movies à la Couchpotato</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/radarr\">https://truecharts.org/charts/stable/radarr</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "media"
             ],
-            "description": "A fork of Sonarr to work with movies \u00e0 la Couchpotato",
+            "description": "A fork of Sonarr to work with movies à la Couchpotato",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/radarr",
@@ -20546,11 +20546,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/slash.webp"
         },
         "slink": {
-            "app_readme": "<p>A self-hosted image sharing platform built with Symfony and SvelteKit\ufe0f.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/slink\">https://truecharts.org/charts/stable/slink</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>A self-hosted image sharing platform built with Symfony and SvelteKit️.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/slink\">https://truecharts.org/charts/stable/slink</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "media"
             ],
-            "description": "A self-hosted image sharing platform built with Symfony and SvelteKit\ufe0f.",
+            "description": "A self-hosted image sharing platform built with Symfony and SvelteKit️.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/slink",
@@ -21881,10 +21881,10 @@
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/tachidesk-docker",
             "location": "/home/runner/_work/catalog/catalog/stable/tachidesk-docker",
-            "latest_version": "7.0.12",
-            "latest_app_version": "preiew",
-            "latest_human_version": "preiew_7.0.12",
-            "last_update": "2024-05-29 12:35:14",
+            "latest_version": "7.0.13",
+            "latest_app_version": "preview",
+            "latest_human_version": "preview_7.0.13",
+            "last_update": "2024-11-29 04:42:43",
             "name": "tachidesk-docker",
             "recommended": false,
             "title": "Tachidesk-docker",
@@ -23392,11 +23392,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/twonky-server.webp"
         },
         "twtxt": {
-            "app_readme": "<p>A Self-Hosted, Twitter\u2122-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/twtxt\">https://truecharts.org/charts/stable/twtxt</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>A Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/twtxt\">https://truecharts.org/charts/stable/twtxt</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "media"
             ],
-            "description": "A Self-Hosted, Twitter\u2122-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!",
+            "description": "A Self-Hosted, Twitter™-like Decentralised microBlogging platform. No ads, no tracking, your content, your data!",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/twtxt",
@@ -24686,11 +24686,11 @@
             "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/wikijs.webp"
         },
         "wireguard": {
-            "app_readme": "<p>WireGuard\u00ae is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/wireguard\">https://truecharts.org/charts/stable/wireguard</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
+            "app_readme": "<p>WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/wireguard\">https://truecharts.org/charts/stable/wireguard</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
             "categories": [
                 "network"
             ],
-            "description": "WireGuard\u00ae is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.",
+            "description": "WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.",
             "healthy": true,
             "healthy_error": null,
             "home": "https://truecharts.org/charts/stable/wireguard",
