@@ -14570,7 +14570,7 @@
                 "https://hub.docker.com/r/jc21/nginx-proxy-manager",
                 "https://nginxproxymanager.com/"
             ],
-            "icon_url": "https://truecharts.org/img/hotlink-ok/chart-icons/nginx-proxy-manager.webp"
+            "icon_url": "https://raw.githubusercontent.com/ZhangTianrong/truecharts/refs/heads/main/stable/nginx-proxy-manager/10.1.11/icon.webp"
         },
         "ngircd": {
             "app_readme": "<p>Ngircd is a free, portable and lightweight Internet Relay Chat server for small or private networks.</p>\n<p>This App is supplied by TrueCharts, for more information visit the manual: <a href=\"https://truecharts.org/charts/stable/ngircd\">https://truecharts.org/charts/stable/ngircd</a></p>\n<hr />\n<p>TrueCharts can only exist due to the incredible effort of our staff.\nPlease consider making a <a href=\"https://truecharts.org/sponsor\">donation</a> or contributing back to the project any way you can!</p>",
