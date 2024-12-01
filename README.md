@@ -80,6 +80,10 @@ This is a fork of [a forked TrueCharts App Catalog archive](https://github.com/v
 This fork comes with a semi-automatic updater in `updater` which checks for newer images of apps specified in `updater/config.py` and creates corresponding charts to use the latest images. You can add an app into the configuration, e.g.
 
 ```python
+import pathlib
+
+CHARTS_DIR = <path/to/this/project>
+APPS = [
     {
         "name": "wg-easy",                  # Name of the chart
         "train": "stable",                  # Train
@@ -92,6 +96,8 @@ This fork comes with a semi-automatic updater in `updater` which checks for newe
             "version_rewriter": "{}.0.0"    # [Optional] Rewrite the version from tag into another format
         },
     }
+    ...
+]
 ```
 
 Then, by running
