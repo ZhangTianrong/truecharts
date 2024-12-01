@@ -11,6 +11,7 @@ from config import APPS as apps
 from config import CHARTS_DIR
 from version_checker import GHCRChecker, DockerHubChecker
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Load the catalog of the Helm charts

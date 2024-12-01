@@ -94,7 +94,7 @@ class DockerHubChecker(VersionChecker):
         current_page = data
         while True:
             for result in current_page["results"]:
-                if result.get("images") and result["digest"] == digest:
+                if result.get("digest") and result["digest"] == digest:
                     matching_tags.append(result["name"])
             
             next_page = current_page.get("next")
