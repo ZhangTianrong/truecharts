@@ -54,7 +54,7 @@ def parse_version(tags, matcher:str = None, rewriter:str = None):
             if rewriter:
                 return tag, rewriter.format(raw_version)
             return tag, raw_version
-    return tags[0], None
+    return tags[0], rewriter.format("") if rewriter else "unknown"
 
 def check_version(app):
     app_name, app_train = app["name"], app["train"]
