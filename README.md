@@ -20,6 +20,7 @@ This is a fork of [a forked TrueCharts App Catalog archive](https://github.com/v
 + alist
 + wg-easy
 + tachidesk-docker
++ flood
 
 ### Charts mainted by the upper-stream fork:
 
