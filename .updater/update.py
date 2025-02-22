@@ -6,6 +6,8 @@ from dataclasses import dataclass
 import yaml
 import re
 import copy
+import subprocess
+import sys
 
 from config import APPS as apps
 from config import CHARTS_DIR
@@ -137,15 +139,38 @@ def create_version_dir(app_name:str, app_train:str, old_version:ChartVersion, ne
     with open(CHARTS_DIR/new_dir/"Chart.yaml", "w") as f:
         yaml.dump(chart, f)
     logger.info(f"Finished creating new version directory at {new_dir}")
+    return new_dir
 
 if __name__ == "__main__":
     for app in apps:
         app_name, app_train = app["name"], app["train"]
         need_update, old_version, new_version = check_version(app)
         if need_update:
+            # Check for uncommitted changes
+            result = subprocess.run(['git', '-C', str(CHARTS_DIR), 'status', '--porcelain'], 
+                                capture_output=True, text=True)
+            if result.stdout.strip():
+                logger.error(f"Uncommitted changes detected in {CHARTS_DIR}. Aborting update.")
+                sys.exit(1)
             logger.info(f"Updating {app_name} from {old_version.human_version} to {new_version.human_version}")
             update_catalog(app_name, app_train, old_version, new_version)
             update_app_version_json(app_name, app_train, old_version, new_version)
-            create_version_dir(app_name, app_train, old_version, new_version)
+            versions_dir = create_version_dir(app_name, app_train, old_version, new_version)
+            # Git add new files and commit changes
+            try:
+                subprocess.run(['git', '-C', str(CHARTS_DIR), 'add', 
+                            versions_dir, 'catalog.json', f"{app_train}/{app_name}/app_versions.json"], 
+                            check=True)
+                subprocess.run(['git', '-C', str(CHARTS_DIR), 'commit',
+                            '-m', f"update {app_name} to {new_version.human_version}"], 
+                            check=True)
+            except subprocess.CalledProcessError as e:
+                logger.error(f"Git operation failed: {str(e)}")
+                sys.exit(1)
         else:
             logger.info(f"No update needed for {app_name} in {app_train}")
+    
+    logger.info("All updates completed. Review commits with:")
+    logger.info(f"  git -C {CHARTS_DIR} log")
+    logger.info("Push changes when ready with:")
+    logger.info(f"  git -C {CHARTS_DIR} push")
