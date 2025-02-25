@@ -46,7 +46,7 @@ jobs:
       
       - name: Run update script
         working-directory: .updater
-        run: python update.py
+        run: uv run python update.py
         continue-on-error: false
       
       - name: Check for changes
