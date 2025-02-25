@@ -48,7 +48,4 @@ library/common-test/chart.lock
 catalog_validation
 /catalog_validation
 # Python
-uv.lock
-.python-version
-pyproject.toml
 test*.py
