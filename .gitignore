@@ -8,7 +8,6 @@ __pycache__
 *.pyc
 .cache
 .pytest_cache
-config.py
 auto_config.py
 .DS_Store
 .idea/
