@@ -1,0 +1,81 @@
+name: Update Helm Catalog
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  update-catalog:
+    name: Update Helm Catalog
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
+      
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.6.2"
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".updater/pyproject.toml"
+      
+      - name: Install dependencies
+        working-directory: .updater
+        run: uv sync
+      
+      - name: Create update branch
+        run: |
+          git checkout -b auto-update-helm-catalog || git checkout auto-update-helm-catalog
+          git reset --hard origin/main
+          git push -f -u origin auto-update-helm-catalog
+      
+      - name: Run update script
+        working-directory: .updater
+        run: python update.py
+        continue-on-error: false
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Found changes to commit"
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes to commit"
+          fi
+      
+      - name: Push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          # Make sure we're on the right branch
+          git checkout auto-update-helm-catalog
+          git push origin auto-update-helm-catalog
+      
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          title: "Automatic Helm Catalog Update"
+          body: |
+            This PR contains automatic updates to the Helm catalog.
+            
+            Each commit represents an update to a specific app.
+          branch: auto-update-helm-catalog
+          base: main
+          delete-branch: true
