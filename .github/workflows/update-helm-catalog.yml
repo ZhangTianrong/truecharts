@@ -52,12 +52,12 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if [[ -n $(git status --porcelain) ]]; then
+          if [[ $(git rev-list --count origin/main..HEAD) -ne 0 ]]; then
             echo "changes=true" >> $GITHUB_OUTPUT
-            echo "Found changes to commit"
+            echo "Found changes to push"
           else
             echo "changes=false" >> $GITHUB_OUTPUT
-            echo "No changes to commit"
+            echo "No changes to push"
           fi
       
       - name: Push changes
