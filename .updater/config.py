@@ -79,6 +79,17 @@ APPS = [
             "version_rewriter": "preview"
         },
     },
+    {
+        "name": "filebrowser",
+        "train": "stable",
+        "check_ver": {
+            "type": "dockerhub",
+            "package_owner": "filebrowser",
+            "package_name": "filebrowser",
+            "anchor_tag": "latest",
+            "version_matcher": r"\d+(\.\d+)+$",
+        },
+    },
 ]
 
 CHARTS_DIR = pathlib.Path(__file__).parent.parent
