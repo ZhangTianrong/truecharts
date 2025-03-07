@@ -7,6 +7,9 @@ on:
   # Allow manual triggering
   workflow_dispatch:
 
+permissions:
+  contents: write  # Ensure the workflow can push to main
+
 jobs:
   update-catalog:
     name: Update Helm Catalog
@@ -38,12 +41,6 @@ jobs:
         working-directory: .updater
         run: uv sync
       
-      - name: Create update branch
-        run: |
-          git checkout -b auto-update-helm-catalog || git checkout auto-update-helm-catalog
-          git reset --hard origin/main
-          git push -f -u origin auto-update-helm-catalog
-      
       - name: Run update script
         working-directory: .updater
         run: uv run python update.py
@@ -60,22 +57,7 @@ jobs:
             echo "No changes to push"
           fi
       
-      - name: Push changes
+      - name: Push changes to main
         if: steps.check_changes.outputs.changes == 'true'
         run: |
-          # Make sure we're on the right branch
-          git checkout auto-update-helm-catalog
-          git push origin auto-update-helm-catalog
-      
-      - name: Create Pull Request
-        if: steps.check_changes.outputs.changes == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          title: "Automatic Helm Catalog Update"
-          body: |
-            This PR contains automatic updates to the Helm catalog.
-            
-            Each commit represents an update to a specific app.
-          branch: auto-update-helm-catalog
-          base: main
-          delete-branch: true
+          git push origin main
