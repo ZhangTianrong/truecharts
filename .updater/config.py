@@ -69,6 +69,17 @@ APPS = [
         },
     },
     {
+        "name": "qbittorrent",
+        "train": "stable",
+        "check_ver": {
+            "type": "ghcr",
+            "package_owner": "onedr0p",
+            "package_name": "qbittorrent",
+            "anchor_tag": "rolling",
+            "version_matcher": r"\d+\.\d+\.\d+"
+        }
+    },
+    {
         "name": "tachidesk-docker",
         "train": "stable",
         "check_ver": {
