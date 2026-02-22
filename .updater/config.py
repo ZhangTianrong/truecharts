@@ -101,6 +101,18 @@ APPS = [
             "version_matcher": r"\d+(\.\d+)+$",
         },
     },
+    {
+        "name": "photoprism",
+        "train": "stable",
+        "check_ver": {
+            "type": "dockerhub",
+            "package_owner": "photoprism",
+            "package_name": "photoprism",
+            "anchor_tag": "latest",
+            "version_matcher": r"^\d+$",
+            "version_rewriter": "{}.0.0",
+        },
+    },
 ]
 
 CHARTS_DIR = pathlib.Path(__file__).parent.parent
