@@ -1,0 +1,24 @@
+image:
+  pullPolicy: IfNotPresent
+  repository: jesec/flood
+  tag: 4.14.2@sha256:370f76fd7fbc39ab3abb3b55162a18dfa63e9fd82c6b335e1c17a69b58ce4e8a
+persistence:
+  data:
+    enabled: true
+    mountPath: /data
+portal:
+  open:
+    enabled: true
+service:
+  main:
+    ports:
+      main:
+        port: 10036
+        targetPort: 3000
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          env:
+            FLOOD_OPTION_RUNDIR: /data
