@@ -41,6 +41,10 @@ jobs:
         working-directory: .updater
         run: uv sync
       
+      - name: Test version checker
+        working-directory: .updater
+        run: uv run python -m unittest discover -s tests -v
+
       - name: Run update script
         working-directory: .updater
         run: uv run python update.py
@@ -49,7 +53,7 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          if [[ $(git rev-list --count origin/main..HEAD) -ne 0 ]]; then
+          if [[ $(git rev-list --count "origin/${GITHUB_REF_NAME}..HEAD") -ne 0 ]]; then
             echo "changes=true" >> $GITHUB_OUTPUT
             echo "Found changes to push"
           else
@@ -57,7 +61,7 @@ jobs:
             echo "No changes to push"
           fi
       
-      - name: Push changes to main
+      - name: Push catalog changes
         if: steps.check_changes.outputs.changes == 'true'
         run: |
-          git push origin main
+          git push origin "HEAD:${GITHUB_REF_NAME}"
