@@ -64,9 +64,21 @@ class DockerHubChecker(VersionChecker):
         
         if not data.get("results"):
             raise ValueError(f"No tags found for image {image}")
+
+        # Read at least two pages for aliases, and keep going if a stable tag
+        # has fallen behind newer development tags.
+        results = list(data["results"])
+        pages_read = 1
+        while data.get("next") and (
+            pages_read < 2 or (label and not any(r.get("name") == label for r in results))
+        ):
+            response = self.session.get(data["next"], timeout=self.timeout)
+            response.raise_for_status()
+            data = response.json()
+            results.extend(data["results"])
+            pages_read += 1
             
         # Filter and sort results
-        results = data["results"]
         target_tag = None
         
         if label:
@@ -87,24 +99,9 @@ class DockerHubChecker(VersionChecker):
             
         # Get the digest from the first image (should be the most relevant one)
         digest = target_tag["digest"]
-        matching_tags = []
-        
-        # Paginate through all results to find matching tags
-        num_page_to_check = 2
-        current_page = data
-        while True:
-            for result in current_page["results"]:
-                if result.get("digest") and result["digest"] == digest:
-                    matching_tags.append(result["name"])
-            
-            next_page = current_page.get("next")
-            num_page_to_check -= 1
-            if not next_page or num_page_to_check == 0:
-                break
-                
-            response = self.session.get(next_page, timeout=self.timeout)
-            response.raise_for_status()
-            current_page = response.json()
+        matching_tags = [
+            result["name"] for result in results if result.get("digest") == digest
+        ]
         
         return ImageVersion(
             tags=sorted(matching_tags),
